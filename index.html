@@ -1,565 +1,419 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Swiss Nature</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />   
+    <title>Central Oregon Nature</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />   
     <link href='https://fonts.googleapis.com/css?family=Kite One' rel='stylesheet'>
-   </head>
-   <body>
+</head>
+<body>
     <div>
         <nav>        
             <a href="lep_pages/lep_index.html" class="button right">Butterflies</a>
         </nav>
         <header>
-            <h1>Wildflowers of the Swiss Alps</h1>
-            
+            <h1>May Wildflowers of Central Oregon</h1>
         </header>
+    </div>
+    
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('May')">May</button>
+        <button class="btn" onclick="filterSelection('June')">June</button>
+        <button class="btn" onclick="filterSelection('July')">July</button>
+        <button class="btn" onclick="filterSelection('August')">August</button>
     </div>
     <br>
     <section>
-      <!-- The order of appearance is by color.  
-           More precisely, it follows that of "A Field Guide to the Flowers of the Alps," by Ansgar Hoppe -->
-      <!-- Red and pink flowers -->
-      <article>
-        <a href="flower_pp/Thalictrum_aquilegiifolium.html"><img src="flower_previews/Thalictrum_aquilegiifolium_PV.jpg" alt="French Meadow-Rue" title="French Meadow-Rue"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Erica_carnea.html"><img src="flower_previews/Erica_carnea_PV.jpg" alt="Spring Heath" title="Spring Heath"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Dianthus_barbatus.html"><img src="flower_previews/Dianthus_barbatus_PV.jpg" alt="Sweet William" title="Sweet William"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Dianthus_superbus.html"><img src="flower_previews/Dianthus_superbus_PV.jpg" alt="Fringed Pink" title="Fringed Pink"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Saponaria_ocymoides.html"><img src="flower_previews/Saponaria_ocymoides_PV.jpg" alt="Rock Soapwort" title="Rock Soapwort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Silene_acaulis.html"><img src="flower_previews/Silene_acaulis_PV.jpg" alt="Moss Campion" title="Moss Campion"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Silene_dioica.html"><img src="flower_previews/Silene_dioica_PV.jpg" alt="Red Campion" title="Red Campion"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Bistorta_officinalis.html"><img src="flower_previews/Bistorta_officinalis_PV.jpg" alt="Common Bistort" title="Common Bistort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Androsace_adfinis.html"><img src="flower_previews/Androsace_adfinis_PV.jpg" alt="Rock Jasmine" title="Rock Jasmine"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Primula_farinosa.html"><img src="flower_previews/Primula_farinosa_PV.jpg" alt="Bird's-eye Primrose" title="Bird's-eye Primrose"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Sedum_atratum.html"><img src="flower_previews/Sedum_atratum_PV.jpg" alt="Dark Stonecrop" title="Dark Stonecrop"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Saxifraga_oppositifolia.html"><img src="flower_previews/Saxifraga_oppositifolia_PV.jpg" alt="Purple Saxifrage" title="Purple Saxifrage"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Geranium_sanguineum.html"><img src="flower_previews/Geranium_sanguineum_PV.png" alt="Bloody Crane's-Bill" title="Bloody Crane's-Bill"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Geranium_sylvaticum.html"><img src="flower_previews/Geranium_sylvaticum_PV.jpg" alt="Bloody Crane's-Bill" title="Bloody Crane's-Bill"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Mutellina_purpurea.html"><img src="flower_previews/Mutellina_purpurea_PV.jpg" alt="Alpine Lovage" title="Alpine Lovage"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Pimpinella_major.html"><img src="flower_previews/Pimpinella_major_PV.jpg" alt="Greater Burnet-Saxifrage" title="Greater Burnet-Saxifrage"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Valeriana_montana.html"><img src="flower_previews/Valeriana_montana_PV.jpg" alt="Mountain Valerian" title="Mountain Valerian"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Rumex_scutatus.html"><img src="flower_previews/Rumex_scutatus_PV.jpg" alt="French Sorrel" title="French Sorrel"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Rumex_alpinus.html"><img src="flower_previews/Rumex_alpinus_PV.jpg" alt="Monk's Rhubarb" title="Monk's Rhubarb"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Soldanella_alpina.html"><img src="flower_previews/Soldanella_alpina_PV.jpg" alt="Alpine Snowbell" title="Alpine Snowbell"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Adenostyles_alliariae.html"><img src="flower_previews/Adenostyles_alliariae_PV.jpg" alt="Hedge-leaved Adenostyle" title="Hedge-leaved Adenostyle"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Adenostyles_alpina.html"><img src="flower_previews/Adenostyles_alpina_PV.jpg" alt="Alpine Adenostyle" title="Alpine Adenostyle"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Petasites_paradoxus.html"><img src="flower_previews/Petasites_paradoxus_PV.jpg" alt="Alpine Butterbur" title="Alpine Butterbur"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Antennaria_dioica.html"><img src="flower_previews/Antennaria_dioica_PV.png" alt="Pussytoes" title="Pussytoes, Catsfoot"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Homogyne_alpina.html"><img src="flower_previews/Homogyne_alpina_PV.jpg" alt="Alpine Coltsfoot" title="Alpine Coltsfoot"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Carduus_defloratus.html"><img src="flower_previews/Carduus_defloratus_PV.jpg" alt="Alpine Thistle" title="Alpine Thistle"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Carduus_personata.html"><img src="flower_previews/Carduus_personata_PV.jpg" alt="Great Marsh Thistle" title="Great Marsh Thistle"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Crepis_aurea.html"><img src="flower_previews/Crepis_aurea_PV.jpg" alt="Golden Hawksbeard" title="Golden Hawksbeard"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Pilosella_aurantiaca.html"><img src="flower_previews/Pilosella_aurantiaca_PV.jpg" alt="Orange Hawkweed" title="Orange Hawkweed"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Allium_schoenoprasum.html"><img src="flower_previews/Allium_schoenoprasum_PV.jpg" alt="Chives" title="Chives"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Lilium_martagon.html"><img src="flower_previews/Lilium_martagon_PV.jpg" alt="Martagon lily" title="Martagon lily"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Trifolium_alpinum.html"><img src="flower_previews/Trifolium_alpinum_PV.jpg" alt="Alpine Clover" title="Alpine Clover"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Onobrychis_montana.html"><img src="flower_previews/Onobrychis_montana_PV.jpg" alt="Mountain Sainfoin" title="Mountain Sainfoin"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Clinopodium_alpinum.html"><img src="flower_previews/Clinopodium_alpinum_PV.jpg" alt="Rock Thyme" title="Rock Thyme"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Thymus_praecox.html"><img src="flower_previews/Thymus_praecox_PV.jpg" alt="Mother of thyme" title="Mother of thyme"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Pedicularis_verticillata.html"><img src="flower_previews/Pedicularis_verticillata_PV.jpg" alt="Whorled Lousewort" title="Whorled Lousewort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Epipactis_atrorubens.html"><img src="flower_previews/Epipactis_atrorubens_PV.jpg" alt="Dark-red Helleborine" title="Dark-red Helleborine"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Gymnadenia_conopsea.html"><img src="flower_previews/Gymnadenia_conopsea_PV.jpg" alt="Fragrant Orchid" title="Fragrant Orchid"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Gymnadenia_rhellicani.html"><img src="flower_previews/Gymnadenia_rhellicani_PV.jpg" alt="Dark Vanilla Orchid" title="Dark Vanilla Orchid"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Neotinea_ustulata.html"><img src="flower_previews/Neotinea_ustulata_PV.jpg" alt="Burnt Orchid" title="Burnt Orchid"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Traunsteinera_globosa.html"><img src="flower_previews/Traunsteinera_globosa_PV.jpg" alt="Round-headed orchid" title="Round-headed orchid"></a>
-      </article>
+        <!-- Order of species is based on color, particularly the order in which the species are found in "Wildflowers of the PNW," by Mark Turner and Phyllis Gustafson -->
         
-      <!-- White flowers -->
+        <!-- White flowers -->
         
-      <article>
-        <a href="flower_pp/Arabis_alpina.html"><img src="flower_previews/Arabis_alpina_PV.jpg" alt="Alpine Rock-Cress" title="Alpine Rock-Cress"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Kernera_saxatilis.html"><img src="flower_previews/Kernera_saxatilis_PV.jpg" alt="Rock Kernera" title="Rock Kernera"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Hornungia_alpina.html"><img src="flower_previews/Hornungia_alpina_PV.jpg" alt="Chamois Cress" title="Chamois Cress"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Ranunculus_aconitifolius.html"><img src="flower_previews/Ranunculus_aconitifolius_PV.jpg" alt="Aconite-leaved Buttercup" title="Aconite-leaved Buttercup"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Ranunculus_platanifolius.html"><img src="flower_previews/Ranunculus_platanifolius_PV.jpg" alt="Large White Buttercup" title="Large White Buttercup"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Ranunculus_alpestris.html"><img src="flower_previews/Ranunculus_alpestris_PV.jpg" alt="Alpine Crowfoot" title="Alpine Crowfoot"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Gypsophila_repens.html"><img src="flower_previews/Gypsophila_repens_PV.jpg" alt="Creeping Baby's-Breath" title="Creeping Baby's-Breath"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Sabulina_verna.html"><img src="flower_previews/Sabulina_verna_PV.jpg" alt="Spring Sandwort" title="Spring Sandwort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Heliosperma_pusillum.html"><img src="flower_previews/Heliosperma_pusillum_PV.jpg" alt="Alpine Catchfly" title="Alpine Catchfly"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Atocion_rupestre.html"><img src="flower_previews/Atocion_rupestre_PV.jpg" alt="Rock Campion" title="Rock Campion"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Silene_vulgaris.html"><img src="flower_previews/Silene_vulgaris_PV.jpg" alt="Bladder Campion" title="Bladder Campion"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Silene_nutans.html"><img src="flower_previews/Silene_nutans_PV.jpg" alt="Nottingham Catchfly" title="Nottingham Catchfly"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Bistorta_vivipara.html"><img src="flower_previews/Bistorta_vivipara_PV.jpg" alt="Alpine Bistort" title="Alpine Bistort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Arctostaphylos_uva-ursi.html"><img src="flower_previews/Arctostaphylos_uva-ursi_PV.jpg" alt="Bearberry" title="Bearberry"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Moneses_uniflora.html"><img src="flower_previews/Moneses_uniflora_PV.jpg" alt="One-flowered Wintergreen" title="One-flowered Wintergreen"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Orthilia_secunda.html"><img src="flower_previews/Orthilia_secunda_PV.jpg" alt="One-sided Wintergreen" title="One-sided Wintergreen"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Pyrola_rotundifolia.html"><img src="flower_previews/Pyrola_rotundifolia_PV.jpg" alt="Round-leaved Wintergreen" title="Round-leaved Wintergreen"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Androsace_chamaejasme.html"><img src="flower_previews/Androsace_chamaejasme_PV.jpg" alt="Round-leaved Wintergreen" title="Round-leaved Wintergreen"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Androsace_helvetica.html"><img src="flower_previews/Androsace_helvetica_PV.jpg" alt="Swiss Rock-jasmine" title="Swiss Rock-jasmine"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Sedum_album.html"><img src="flower_previews/Sedum_album_PV.jpg" alt="White Stonecrop" title="White Stonecrop"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Saxifraga_paniculata.html"><img src="flower_previews/Saxifraga_paniculata_PV.jpg" alt="Live-long Saxifrage" title="Live-long Saxifrage"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Saxifraga_caesia.html"><img src="flower_previews/Saxifraga_caesia_PV.jpg" alt="Blue Saxifrage" title="Blue Saxifrage"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Saxifraga_androsacea.html"><img src="flower_previews/Saxifraga_androsacea_PV.jpg" alt="Scree Saxifrage" title="Scree Saxifrage"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Saxifraga_rotundifolia.html"><img src="flower_previews/Saxifraga_rotundifolia_PV.jpg" alt="Round-leaved Saxifrage" title="Round-leaved Saxifrage"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Micranthes_stellaris.html"><img src="flower_previews/Micranthes_stellaris_PV.jpg" alt="Starry saxifrage" title="Starry saxifrage"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Astrantia_major.html"><img src="flower_previews/Astrantia_major_PV.jpg" alt="Great Masterwort" title="Great Masterwort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Laserpitium_halleri.html"><img src="flower_previews/Laserpitium_halleri_PV.jpg" alt="Narrow-leaved Sermountain" title="Narrow-leaved Sermountain"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Siler_montanum.html"><img src="flower_previews/Siler_montanum_PV.jpg" alt="Laserwort" title="Laserwort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Heracleum_sphondylium.html"><img src="flower_previews/Heracleum_sphondylium_PV.jpg" alt="Hogweed" title="Hogweed"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Peucedanum_ostruthium.html"><img src="flower_previews/Peucedanum_ostruthium_PV.jpg" alt="Masterwort" title="Masterwort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Athamanta_cretensis.html"><img src="flower_previews/Athamanta_cretensis_PV.jpg" alt="Candy Carrot" title="Candy Carrot"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Carum_carvi.html"><img src="flower_previews/Carum_carvi_PV.jpg" alt="Caraway" title="Caraway"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Chaerophyllum_villarsii.html"><img src="flower_previews/Chaerophyllum_villarsii_PV.jpg" alt="Alpine Chervil" title="Alpine Chervil"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Menyanthes_trifoliata.html"><img src="flower_previews/Menyanthes_trifoliata_PV.jpg" alt="Bogbean" title="Bogbean"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Vincetoxicum_hirundinaria.html"><img src="flower_previews/Vincetoxicum_hirundinaria_PV.jpg" alt="Swallow-Wort" title="Swallow-Wort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Verbascum_lychnitis.html"><img src="flower_previews/Verbascum_lychnitis_PV.jpg" alt="White Mullein" title="White Mullein"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Valeriana_tripteris.html"><img src="flower_previews/Valeriana_tripteris_PV.jpg" alt="Three-leaved Valerian" title="Three-leaved Valerian"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Anemonastrum_narcissiflorum.html"><img src="flower_previews/Anemonastrum_narcissiflorum_PV.jpg" alt="Narcissus-flowered Anemone" title="Narcissus-flowered Anemone"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Pulsatilla_alpina.html"><img src="flower_previews/Pulsatilla_alpina_PV.jpg" alt="Alpine Pasqueflower" title="Alpine Pasqueflower"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Pulsatilla_vernalis.html"><img src="flower_previews/Pulsatilla_vernalis_PV.jpg" alt="Spring Pasqueflower" title="Spring Pasqueflower"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Dryas_octopetala.html"><img src="flower_previews/Dryas_octopetala_PV.jpg" alt="Mountain Avens" title="Mountain Avens"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Achillea_millefolium.html"><img src="flower_previews/Achillea_millefolium_PV.jpg" alt="Yarrow" title="Yarrow"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Erigeron_uniflorus.html"><img src="flower_previews/Erigeron_uniflorus_PV.jpg" alt="One-flowered Fleabane" title="One-flowered Fleabane"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Leucanthemopsis_alpina.html"><img src="flower_previews/Leucanthemopsis_alpina_PV.jpg" alt="Alpine Moon-Daisy" title="Alpine Moon-Daisy"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Veratrum_album.html"><img src="flower_previews/Veratrum_album_PV.png" alt="White Hellebore" title="White Hellebore"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Convallaria_majalis.html"><img src="flower_previews/Convallaria_majalis_PV.jpg" alt="Lily of the Valley" title="Lily of the Valley"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Polygonatum_verticillatum.html"><img src="flower_previews/Polygonatum_verticillatum_PV.jpg" alt="Whorled Solomon's-Seal" title="Whorled Solomon's-Seal"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Anthericum_liliago.html"><img src="flower_previews/Anthericum_liliago_PV.jpg" alt="St Bernard's Lily" title="St Bernard's Lily"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Trifolium_montanum.html"><img src="flower_previews/Trifolium_montanum_PV.jpg" alt="Mountain Clover" title="Mountain Clover"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Trifolium_pratense.html"><img src="flower_previews/Trifolium_pratense_PV.jpg" alt="Red Clover (includes Snow Clover)" title="Red Clover (includes Snow Clover)"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Astragalus_alpinus.html"><img src="flower_previews/Astragalus_alpinus_PV.png" alt="Alpine Milkvetch" title="Alpine Milkvetch"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Teucrium_montanum.html"><img src="flower_previews/Teucrium_montanum_PV.jpg" alt="Mountain Germander" title="Mountain Germander"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Euphrasia_officinalis.html"><img src="flower_previews/Euphrasia_officinalis_PV.jpg" alt="Eyebright" title="Eyebright"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Pinguicula_alpina.html"><img src="flower_previews/Pinguicula_alpina_PV.jpg" alt="Alpine Butterwort" title="Alpine Butterwort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Epipactis_palustris.html"><img src="flower_previews/Epipactis_palustris_PV.jpg" alt="Marsh Helleborine" title="Marsh Helleborine"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Platanthera_bifolia.html"><img src="flower_previews/Platanthera_bifolia_PV.jpg" alt="Lesser Butterfly-Orchid" title="Lesser Butterfly-Orchid"></a>
-      </article>
-        
-      <!-- Blue  or purple flowers -->
-        
-      <article>
-        <a href="flower_pp/Veronica_chamaedrys.html"><img src="flower_previews/Veronica_chamaedrys_PV.jpg" alt="Germander Speedwell" title="Germander Speedwell"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Veronica_fruticans.html"><img src="flower_previews/Veronica_fruticans_PV.jpg" alt="Rock Speedwell" title="Rock Speedwell"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Veronica_alpina.html"><img src="flower_previews/Veronica_alpina_PV.jpg" alt="Alpine Speedwell" title="Alpine Speedwell"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Veronica_aphylla.html"><img src="flower_previews/Veronica_aphylla_PV.jpg" alt="Leafless-stemmed Speedwell" title="Leafless-stemmed Speedwell"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Veronica_officinalis.html"><img src="flower_previews/Veronica_officinalis_PV.jpg" alt="Heath Speedwell" title="Heath Speedwell"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Aquilegia_alpina.html"><img src="flower_previews/Aquilegia_alpina_PV.jpg" alt="Alpine Columbine" title="Alpine Columbine"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Aquilegia_vulgaris.html"><img src="flower_previews/Aquilegia_vulgaris_PV.jpg" alt="Common Columbine" title="Common Columbine"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Gentiana_acaulis.html"><img src="flower_previews/Gentiana_acaulis_PV.jpg" alt="Stemlees Gentian" title="Stemless Gentian"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Gentiana_clusii.html"><img src="flower_previews/Gentiana_clusii_PV.jpg" alt="Trumpet Gentian" title="Trumpet Gentian"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Gentiana_verna.html"><img src="flower_previews/Gentiana_verna_PV.jpg" alt="Spring Gentian" title="Spring Gentian"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Echium_vulgare.html"><img src="flower_previews/Echium_vulgare_PV.jpg" alt="Viper's-Bugloss" title="Viper's-Bugloss"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Myosotis_alpestris.html"><img src="flower_previews/Myosotis_alpestris_PV.jpg" alt="Alpine Forget-Me-Not" title="Alpine Forget-Me-Not"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Erinus_alpinus.html"><img src="flower_previews/Erinus_alpinus_PV.jpg" alt="Fairy Foxglove" title="Fairy Foxglove"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Phyteuma_orbiculare.html"><img src="flower_previews/Phyteuma_orbiculare_PV.jpg" alt="Round-headed Rampion" title="Round-headed Rampion"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Phyteuma_ovatum.html"><img src="flower_previews/Phyteuma_ovatum_PV.jpg" alt="Dark Rampion" title="Dark Rampion"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Campanula_barbata.html"><img src="flower_previews/Campanula_barbata_PV.jpg" alt="Bearded Bellflower" title="Bearded Bellflower"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Campanula_glomerata.html"><img src="flower_previews/Campanula_glomerata_PV.jpg" alt="Clustered Bellflower" title="Clustered Bellflower"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Campanula_cochleariifolia.html"><img src="flower_previews/Campanula_cochleariifolia_PV.jpg" alt="Fairy's-Thimble" title="Fairy's-Thimble"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Centaurea_montana.html"><img src="flower_previews/Centaurea_montana_PV.jpg" alt="Perennial Cornflower" title="Perennial Cornflower"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Aconitum_napellus.html"><img src="flower_previews/Aconitum_napellus_PV.jpg" alt="Monk's-Hood" title="Monk's-Hood"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Viola_calcarata.html"><img src="flower_previews/Viola_calcarata_PV.jpg" alt="Long-spurred Violet" title="Long-spurred Violet"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Viola_cenisia.html"><img src="flower_previews/Viola_cenisia_PV.jpg" alt="Mount Cenis Violet" title="Mount Cenis Violet"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Vicia_cracca.html"><img src="flower_previews/Vicia_cracca_PV.jpg" alt="Tufted Vetch" title="Tufted Vetch"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Polygala_alpestris.html"><img src="flower_previews/Polygala_alpestris_PV.jpg" alt="Mountain Milkwort" title="Mountain Milkwort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Ajuga_reptans.html"><img src="flower_previews/Ajuga_reptans_PV.jpg" alt="Carpet Bugle" title="Carpet Bugle"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Prunella_grandiflora.html"><img src="flower_previews/Prunella_grandiflora_PV.jpg" alt="Large Self-Heal" title="Large Self-Heal"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Linaria_alpina.html"><img src="flower_previews/Linaria_alpina_PV.jpg" alt="Alpine Toadflax" title="Alpine Toadflax"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Globularia_cordifolia.html"><img src="flower_previews/Globularia_cordifolia_PV.jpg" alt="Matted Globularia" title="Matted Globularia"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Bartsia_alpina.html"><img src="flower_previews/Bartsia_alpina_PV.jpg" alt="Velvetbells" title="Velvetbells"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Pinguicula_vulgaris.html"><img src="flower_previews/Pinguicula_vulgaris_PV.jpg" alt="Common Butterwort" title="Common Butterwort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Knautia_dipsacifolia.html"><img src="flower_previews/Knautia_dipsacifolia_PV.jpg" alt="Wood Scabious" title="Wood Scabious"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Scabiosa_lucida.html"><img src="flower_previews/Scabiosa_lucida_PV.jpg" alt="Shining Scabious" title="Shining Scabious"></a>
-      </article>
-       
-      <!-- Yellow flowers -->
+        <article class="season April May June ">
+            <a href="flower_pp/Calochortus_elegans.html" ><img src="flower_previews/Calochortus_elegans_PV.jpg" alt="Cat's Ear" title="Cat's Ear"></a>
+        </article>
+        <article class="season March April May June">
+            <a href="flower_pp/Leucocrinum_montanum.html" ><img src="flower_previews/Leucocrinum_montanum_PV.jpg" alt="Starlily" title="Starlily"></a>
+        </article>
+        <article class="season March April May June July August September October">
+            <a href="flower_pp/Maianthemum_racemosum.html" ><img src="flower_previews/Maianthemum_racemosum_PV.jpg" alt="
+Solomon's Plume" title="
+Solomon's Plume"></a>
+        </article>
+        <article class="season March April May June July August September October">
+            <a href="flower_pp/Maianthemum_stellatum.html" ><img src="flower_previews/Maianthemum_stellatum_PV.jpg" alt="
+Star-flowered Lily-of-the-Valley" title="
+Star-flowered Lily-of-the-Valley"></a>
+        </article>
+        <article class="season March April May June July">
+            <a href="flower_pp/Triteleia_grandiflora_v_howellii.html" ><img src="flower_previews/Triteleia_grandiflora_v_howellii_PV.jpg" alt="
+Howell's Triteleia" title="
+Howell's Triteleia"></a>
+        </article>
+        <article class="season March April May June July August">
+            <a href="flower_pp/Triteleia_hyacinthina.html" ><img src="flower_previews/Triteleia_hyacinthina_PV.jpg" alt="
+White Brodiaea" title="
+White Brodiaea"></a>
+        </article>
+        <article class="season April May June">
+            <a href="flower_pp/Toxicoscordion_paniculatum.html" ><img src="flower_previews/Toxicoscordion_paniculatum_PV.jpg" alt="Foothill Deathcamas" title="
+Foothill Deathcamas"></a>
+        </article>     
+        <article class="season April May June July">
+            <a href="flower_pp/Toxicoscordion_venenosum.html" ><img src="flower_previews/Toxicoscordion_venenosum_PV.jpg" alt="Meadow Deathcamas" title="
+Meadow Deathcamas"></a>
+        </article>     
+        <article class="season March April May June July August">
+            <a href="flower_pp/Eriogonum_compositum.html" ><img src="flower_previews/Eriogonum_compositum_PV.jpg" alt="Arrowleaf Buckwheat" title="
+Arrowleaf Buckwheat"></a>
+        </article>  
+        <article class="season March April May June July">
+            <a href="flower_pp/Lepidium_draba.html" ><img src="flower_previews/Lepidium_draba_PV.jpg" alt="Heart-podded Hoary Cress" title="
+Heart-podded Hoary Cress"></a>
+        </article>  
+        <article class="season February March April May">
+            <a href="flower_pp/Draba_verna.html" ><img src="flower_previews/Draba_verna_PV.jpg" alt="Common Whitlowgrass" title="
+Common Whitlowgrass"></a>
+        </article>   
+        <article class="season February March April May">
+            <a href="flower_pp/Thysanocarpus_curvipes.html" ><img src="flower_previews/Thysanocarpus_curvipes_PV.jpg" alt="Sand Fringepod" title="
+Sand Fringepod"></a>
+        </article>
+        <article class="season March April May June July">
+            <a href="flower_pp/Oenothera_cespitosa.html" ><img src="flower_previews/Oenothera_cespitosa_PV.jpg" alt="Fragrant Evening Primrose" title="
+Fragrant Evening Primrose"></a>
+        </article>
+        <article class="season February March April May">
+            <a href="flower_pp/Holosteum_umbellatum.html" ><img src="flower_previews/Holosteum_umbellatum_PV.jpg" alt="Jagged Chickweed" title="
+Jagged Chickweed"></a>
+        </article>
+        <article class="season February March April May">
+            <a href="flower_pp/Holosteum_umbellatum.html" ><img src="flower_previews/Holosteum_umbellatum_PV.jpg" alt="Jagged Chickweed" title="
+Jagged Chickweed"></a>
+        </article>
+        <article class="season January February March April May June">
+            <a href="flower_pp/Claytonia_perfoliata.html" ><img src="flower_previews/Claytonia_perfoliata_PV.jpg" alt="Miner's Lettuce" title="
+Miner's Lettuce"></a>
+        </article>
+        <article class="season March April May June July August September">
+            <a href="flower_pp/Heracleum_maximum.html" ><img src="flower_previews/Heracleum_maximum_PV.jpg" alt="Cow parsnip" title="
+Cow parsnip"></a>
+        </article>
+        <article class="season March April May June">
+            <a href="flower_pp/Lomatium_macrocarpum.html" ><img src="flower_previews/Lomatium_macrocarpum_PV.jpg" alt="Bigseed Desert Parsley" title="
+Bigseed Desert Parsley"></a>
+        </article> 
+        <article class="season April May June July August September">
+            <a href="flower_pp/Amelanchier_alnifolia.html" ><img src="flower_previews/Amelanchier_alnifolia_PV.jpg" alt="Saskatoon" title="
+Saskatoon"></a>
+        </article>  
+        <article class="season April May June July August September October">
+            <a href="flower_pp/Crataegus_douglasii.html" ><img src="flower_previews/Crataegus_douglasii_PV.jpg" alt="Black Hawthorn" title="
+Black Hawthorn"></a>
+        </article>  
+        <article class="season March April May June July August September">
+            <a href="flower_pp/Fragaria_vesca.html" ><img src="flower_previews/Fragaria_vesca_PV.jpg" alt="Woodland Strawberry" title="
+Woodland Strawberry"></a>
+        </article>   
+        <article class="season April May June July August September">
+            <a href="flower_pp/Fragaria_virginiana.html" ><img src="flower_previews/Fragaria_virginiana_PV.jpg" alt="Virginia Strawberry" title="
+Virginia Strawberry"></a>
+        </article>     
+        <article class="season March April May June July August September October November">
+            <a href="flower_pp/Holodiscus_discolor.html" ><img src="flower_previews/Holodiscus_discolor_PV.jpg" alt="Ocean Spray" title="Ocean Spray"></a>
+        </article>      
+        <article class="season March April May June July August September October November">
+            <a href="flower_pp/Rubus_parviflorus.html" ><img src="flower_previews/Rubus_parviflorus_PV.jpg" alt="Thimbleberry" title="Thimbleberry"></a>
+        </article>        
+        <article class="season February March April May">
+            <a href="flower_pp/Micranthes_integrifolia.html" ><img src="flower_previews/Micranthes_integrifolia_PV.jpg" alt="Wholeleaf Saxifrage" title="Wholeleaf Saxifrage"></a>
+        </article>         
+        <article class="season January February March April May June July August September October November December">
+            <a href="flower_pp/Marrubium_vulgare.html" ><img src="flower_previews/Marrubium_vulgare_PV.jpg" alt="Horehound" title="Horehound"></a>
+        </article>          
+        <article class="season March April May June July">
+            <a href="flower_pp/Hesperochiron_pumilus.html" ><img src="flower_previews/Hesperochiron_pumilus_PV.jpg" alt="Dwarf Hesperochiron" title="Dwarf Hesperochiron"></a>
+        </article>            
+        <article class="season April May June July August September October">
+            <a href="flower_pp/Phacelia_hastata.html" ><img src="flower_previews/Phacelia_hastata_PV.jpg" alt="Silverleaf Phacelia" title="Silverleaf Phacelia"></a>
+        </article>            
+        <article class="season April May June July August September">
+            <a href="flower_pp/Linanthus_pungens.html" ><img src="flower_previews/Linanthus_pungens_PV.jpg" alt="Granite Prickly Phlox" title="Granite Prickly Phlox"></a>
+        </article>            
+        <article class="season March April May June July">
+            <a href="flower_pp/Phlox_hoodii.html" ><img src="flower_previews/Phlox_hoodii_PV.jpg" alt="Spiny Phlox" title="Spiny Phlox"></a>
+        </article>              
+        <article class="season April May June July August September October November">
+            <a href="flower_pp/Ceanothus_velutinus.html" ><img src="flower_previews/Ceanothus_velutinus_PV.jpg" alt="Snowbrush" title="Snowbrush"></a>
+        </article>                
+        <article class="season March April May June July August September October">
+            <a href="flower_pp/Ribes_cereum.html" ><img src="flower_previews/Ribes_cereum_PV.jpg" alt="Wax Currant" title="Wax Currant"></a>
+        </article>                 
+        <article class="season March April May June">
+            <a href="flower_pp/Plectritis_macrocera.html" ><img src="flower_previews/Plectritis_macrocera_PV.jpg" alt="Longhorn Seablush" title="Longhorn Seablush"></a>
+        </article>                   
+        <article class="season April May June July August">
+            <a href="flower_pp/Erigeron_filifolius.html" ><img src="flower_previews/Erigeron_filifolius_PV.jpg" alt="Thread-leaf Fleabane" title="Thread-leaf Fleabane"></a>
+        </article>                    
+        <article class="season March April May June">
+            <a href="flower_pp/Antennaria_dimorpha.html" ><img src="flower_previews/Antennaria_dimorpha_PV.jpg" alt="Low Pussytoes" title="Low Pussytoes"></a>
+        </article>                    
+        <article class="season February March April May June">
+            <a href="flower_pp/Layia_glandulosa.html" ><img src="flower_previews/Layia_glandulosa_PV.jpg" alt="White Daisy Tidytips" title="White Daisy Tidytips"></a>
+        </article>                    
+        <article class="season April May June July">
+            <a href="flower_pp/Wyethia_helianthoides.html" ><img src="flower_previews/Wyethia_helianthoides_PV.jpg" alt="White Mule's Ears" title="White Mule's Ears"></a>
+        </article>            
 
-      <article>
-        <a href="flower_pp/Euphorbia_cyparissias.html"><img src="flower_previews/Euphorbia_cyparissias_PV.jpg" alt="Cypress Spurge" title="Cypress Spurge"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Biscutella_laevigata.html"><img src="flower_previews/Biscutella_laevigata_PV.jpg" alt="Buckler Mustard" title="Buckler Mustard"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Draba_aizoides.html"><img src="flower_previews/Draba_aizoides_PV.jpg" alt="Yellow Whitlowgrass" title="Yellow Whitlowgrass"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Potentilla_erecta.html"><img src="flower_previews/Potentilla_erecta_PV.jpg" alt="Tormentil" title="Tormentil"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Ranunculus_montanus.html"><img src="flower_previews/Ranunculus_montanus_PV.jpg" alt="Mountain Buttercup" title="Mountain Buttercup"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Ranunculus_acris.html"><img src="flower_previews/Ranunculus_acris_PV.jpg" alt="Meadow Buttercup" title="Meadow Buttercup"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Hypericum_maculatum.html"><img src="flower_previews/Hypericum_maculatum_PV.jpg" alt="Imperforate St John's-Wort" title="Imperforate St John's-Wort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Helianthemum_nummularium.html"><img src="flower_previews/Helianthemum_nummularium_PV.jpg" alt="Common Rock-Rose" title="Common Rock-Rose"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Primula_auricula.html"><img src="flower_previews/Primula_auricula_PV.jpg" alt="Bear's Ear" title="Bear's Ear"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Saxifraga_aizoides.html"><img src="flower_previews/Saxifraga_aizoides_PV.png" alt="Yellow Saxifrage" title="Yellow Saxifrage"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Potentilla_aurea.html"><img src="flower_previews/Potentilla_aurea_PV.jpg" alt="Dwarf Yellow Cinquefoil" title="Dwarf Yellow Cinquefoil"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Trollius_europaeus.html"><img src="flower_previews/Trollius_europaeus_PV.jpg" alt="Globeflower" title="Globeflower"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Gentiana_lutea.html"><img src="flower_previews/Gentiana_lutea_PV.jpg" alt="Great Yellow Gentian" title="Great Yellow Gentian"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Gentiana_punctata.html"><img src="flower_previews/Gentiana_punctata_PV.jpg" alt="Spotted Gentian" title="Spotted Gentian"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Geum_montanum.html"><img src="flower_previews/Geum_montanum_PV.jpg" alt="Alpine Avens" title="Alpine Avens"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Doronicum_grandiflorum.html"><img src="flower_previews/Doronicum_grandiflorum_PV.jpg" alt="Large-flowered Leopard's Bane" title="Large-flowered Leopard's Bane"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Jacobaea_alpina.html"><img src="flower_previews/Jacobaea_alpina_PV.jpg" alt="Alpine Ragwort" title="Alpine Ragwort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Leontodon_hispidus.html"><img src="flower_previews/Leontodon_hispidus_PV.jpg" alt="Rough Hawkbit" title="Rough Hawkbit"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Pilosella_officinarum.html"><img src="flower_previews/Pilosella_officinarum_PV.jpg" alt="Mouse-eared Hawkweed" title="Mouse-eared Hawkweed"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Aconitum_lycoctonum.html"><img src="flower_previews/Aconitum_lycoctonum_PV.jpg" alt="Yellow Monkshood" title="Yellow Monkshood"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Viola_biflora.html"><img src="flower_previews/Viola_biflora_PV.jpg" alt="Yellow Wood Violet" title="Yellow Wood Violet"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Viola_tricolor.html"><img src="flower_previews/Viola_tricolor_PV.jpg" alt="Wild Pansy" title="Wild Pansy"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Lotus_alpinus.html"><img src="flower_previews/Lotus_alpinus_PV.jpg" alt="Alpine Bird's-Foot Trefoil" title="Alpine Bird's-Foot Trefoil"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Lotus_corniculatus.html"><img src="flower_previews/Lotus_corniculatus_PV.jpg" alt="Bird's-Foot Trefoil" title="Bird's-Foot Trefoil"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Anthyllis_vulneraria.html"><img src="flower_previews/Anthyllis_vulneraria_PV.jpg" alt="Kidney-Vetch" title="Kidney-Vetch"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Oxytropis_campestris.html"><img src="flower_previews/Oxytropis_campestris_PV.jpg" alt="Field Locoweed" title="Field Locoweed"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Hippocrepis_comosa.html"><img src="flower_previews/Hippocrepis_comosa_PV.jpg" alt="Horseshoe Vetch" title="Horseshoe Vetch"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Lathyrus_pratensis.html"><img src="flower_previews/Lathyrus_pratensis_PV.jpg" alt="Meadow Pea" title="Meadow Pea"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Polygaloides_chamaebuxus.html"><img src="flower_previews/Polygaloides_chamaebuxus_PV.jpg" alt="Shrubby Milkwort" title="Shrubby Milkwort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Digitalis_grandiflora.html"><img src="flower_previews/Digitalis_grandiflora_PV.jpg" alt="Large Yellow Foxglove" title="Large Yellow Foxglove"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Digitalis_lutea.html"><img src="flower_previews/Digitalis_lutea_PV.jpg" alt="Straw Foxglove" title="Straw Foxglove"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Euphrasia_minima.html"><img src="flower_previews/Euphrasia_minima_PV.jpg" alt="Dwarf Eyebright" title="Dwarf Eyebright"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Melampyrum_pratense.html"><img src="flower_previews/Melampyrum_pratense_PV.jpg" alt="Common Cow-Wheat" title="Common Cow-Wheat"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Rhinanthus_glacialis.html"><img src="flower_previews/Rhinanthus_glacialis_PV.jpg" alt="Awned Yellow-Rattle" title="Awned Yellow-Rattle"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Rhinanthus_alectorolophus.html"><img src="flower_previews/Rhinanthus_alectorolophus_PV.jpg" alt="Greater Yellow Rattle" title="Greater Yellow Rattle"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Pedicularis_foliosa.html"><img src="flower_previews/Pedicularis_foliosa_PV.jpg" alt="Leafy Lousewort" title="Leafy Lousewort"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Cypripedium_calceolus.html"><img src="flower_previews/Cypripedium_calceolus_PV.jpg" alt="Lady's-Slipper" title="Lady's-Slipper"></a>
-      </article>
+<!-- Yellow flowers -->
         
-      <!-- Brown and green flowers -->
+        <article class="season January February March April May June July August September October November December">
+            <a href="flower_pp/Berberis_aquifolium.html" ><img src="flower_previews/Berberis_aquifolium_PV.png" alt="Oregon Grape" title="Oregon Grape"></a>
+        </article>
+        <article class="season March April May June July August September October November December">
+            <a href="flower_pp/Berberis_repens.html" ><img src="flower_previews/Berberis_repens_PV.jpg" alt="Trailing Oregon-grape" title="Trailing Oregon-grape"></a>
+        </article>
+        <article class="season March April May June July August">
+            <a href="flower_pp/Erythronium_grandiflorum.html" ><img src="flower_previews/Erythronium_grandiflorum_PV.jpg" alt="Glacier Lily" title="Glacier Lily"></a>
+        </article> 
+        <article class="season March April May June">
+            <a href="flower_pp/Fritillaria_pudica.html" ><img src="flower_previews/Fritillaria_pudica_PV.jpg" alt="Yellow bells" title="Yellow bells"></a>
+        </article>  
+        <article class="season April May June July">
+            <a href="flower_pp/Eriogonum_douglasii.html" ><img src="flower_previews/Eriogonum_douglasii_PV.jpg" alt="Douglas' Buckwheat" title="Douglas' Buckwheat"></a>
+        </article>  
+        <article class="season April May June July August">
+            <a href="flower_pp/Eriogonum_heracleoides.html" ><img src="flower_previews/Eriogonum_heracleoides_PV.jpg" alt="Parsley desert buckwheat" title="Parsley desert buckwheat"></a>
+        </article>   
+        <article class="season April May June July August">
+            <a href="flower_pp/Sisymbrium_altissimum.html" ><img src="flower_previews/Sisymbrium_altissimum_PV.jpg" alt="Tall Tumblemustard" title="Tall Tumblemustard"></a>
+        </article>    
+        <article class="season April May June July August September">
+            <a href="flower_pp/Taraxia_tanacetifolia.html" ><img src="flower_previews/Taraxia_tanacetifolia_PV.jpg" alt="Tansyleaf Evening Primrose" title="Tansyleaf Evening Primrose"></a>
+        </article>     
+        <article class="season April May June July August">
+            <a href="flower_pp/Astragalus_filipes.html" ><img src="flower_previews/Astragalus_filipes_PV.jpg" alt="Slimpod Milkvetch" title="Slimpod Milkvetch"></a>
+        </article>     
+        <article class="season April May June July August">
+            <a href="flower_pp/Lupinus_arbustus.html" ><img src="flower_previews/Lupinus_arbustus_PV.jpg" alt="Spur Lupine" title="Spur Lupine"></a>
+        </article>     
+        <article class="season February March April May June July August September October">
+            <a href="flower_pp/Medicago_lupulina.html" ><img src="flower_previews/Medicago_lupulina_PV.jpg" alt="Black Medick" title="Black Medick"></a>
+        </article>     
+        <article class="season April May June July">
+            <a href="flower_pp/Thermopsis_montana.html" ><img src="flower_previews/Thermopsis_montana_PV.jpg" alt="Mountain Goldenbanner" title="Mountain Goldenbanner"></a>
+        </article>     
+        <article class="season February March April May June July August">
+            <a href="flower_pp/Viola_glabella.html" ><img src="flower_previews/Viola_glabella_PV.jpg" alt="Smooth Yellow Violet" title="Smooth Yellow Violet"></a>
+        </article>     
+        <article class="season February March April May June July August">
+            <a href="flower_pp/Viola_glabella.html" ><img src="flower_previews/Viola_glabella_PV.jpg" alt="Smooth Yellow Violet" title="Smooth Yellow Violet"></a>
+        </article>     
+        <article class="season March April May June July August">
+            <a href="flower_pp/Viola_purpurea.html" ><img src="flower_previews/Viola_purpurea_PV.jpg" alt="Goosefoot Violet" title="Goosefoot Violet"></a>
+        </article>      
+        <article class="season April May June July August">
+            <a href="flower_pp/Sedum_stenopetalum.html" ><img src="flower_previews/Sedum_stenopetalum_PV.jpg" alt="Wormleaf Stonecrop" title="Wormleaf Stonecrop"></a>
+        </article>      
+        <article class="season February March April May June">
+            <a href="flower_pp/Ranunculus_glaberrimus.html" ><img src="flower_previews/Ranunculus_glaberrimus_PV.jpg" alt="Sagebrush Buttercup" title="Sagebrush Buttercup"></a>
+        </article>       
+        <article class="season February March April May June">
+            <a href="flower_pp/Ranunculus_occidentalis.html" ><img src="flower_previews/Ranunculus_occidentalis_PV.jpg" alt="Western Buttercup" title="Western Buttercup"></a>
+        </article>        
+        <article class="season February March April May June July">
+            <a href="flower_pp/Lomatium_cous.html" ><img src="flower_previews/Lomatium_cous_PV.jpg" alt="Cous-root Desert-Parsley" title="Cous-root Desert-Parsley"></a>
+        </article>        
+        <article class="season February March April May June July">
+            <a href="flower_pp/Lomatium_papilioniferum.html" ><img src="flower_previews/Lomatium_papilioniferum_PV.jpg" alt="Pungent Desert Parsley" title="Pungent Desert Parsley"></a>
+        </article>        
+        <article class="season March April May June July">
+            <a href="flower_pp/Lomatium_nudicaule.html" ><img src="flower_previews/Lomatium_nudicaule_PV.jpg" alt="Barestem Biscuitroot" title="Barestem Biscuitroot"></a>
+        </article>        
+        <article class="season March April May June July">
+            <a href="flower_pp/Lomatium_triternatum.html" ><img src="flower_previews/Lomatium_triternatum_PV.jpg" alt="Nine-leaf Desert-Parsley" title="Nine-leaf Desert-Parsley"></a>
+        </article>        
+        <article class="season February March April May June July">
+            <a href="flower_pp/Mentzelia_albicaulis.html" ><img src="flower_previews/Mentzelia_albicaulis_PV.jpg" alt="Whitestem Blazingstar" title="Whitestem Blazingstar"></a>
+        </article>        
+        <article class="season April May June July August September October">
+            <a href="flower_pp/Heuchera_cylindrica.html" ><img src="flower_previews/Heuchera_cylindrica_PV.jpg" alt="Roundleaf Alumroot" title="Roundleaf Alumroot"></a>
+        </article>        
+        <article class="season March April May June July August September October">
+            <a href="flower_pp/Linaria_dalmatica.html" ><img src="flower_previews/Linaria_dalmatica_PV.jpg" alt="Balkan Toadflax" title="Balkan Toadflax"></a>
+        </article>        
+        <article class="season March April May June July August">
+            <a href="flower_pp/Lithospermum_ruderale.html" ><img src="flower_previews/Lithospermum_ruderale_PV.jpg" alt="Western Gromwell" title="Western Gromwell"></a>
+        </article>        
+        <article class="season February March April May June July August September October">
+            <a href="flower_pp/Ribes_aureum.html" ><img src="flower_previews/Ribes_aureum_PV.jpg" alt="Golden Currant" title="Golden Currant"></a>
+        </article>        
+        <article class="season March April May June">
+            <a href="flower_pp/Nothocalais_troximoides.html" ><img src="flower_previews/Nothocalais_troximoides_PV.jpg" alt="Sagebrush False-Dandelion" title="Sagebrush False-Dandelion"></a>
+        </article>        
+        <article class="season February March April May">
+            <a href="flower_pp/Crocidium_multicaule.html" ><img src="flower_previews/Crocidium_multicaule_PV.jpg" alt="Spring Gold" title="Spring Gold"></a>
+        </article>        
+        <article class="season April May June July">
+            <a href="flower_pp/Senecio_integerrimus.html" ><img src="flower_previews/Senecio_integerrimus_PV.jpg" alt="Spring Gold" title="Spring Gold"></a>
+        </article>        
+        <article class="season March April May June July">
+            <a href="flower_pp/Balsamorhiza_careyana.html" ><img src="flower_previews/Balsamorhiza_careyana_PV.jpg" alt="Carey's Balsamroot" title="Carey's Balsamroot"></a>
+        </article>        
+        <article class="season March April May June">
+            <a href="flower_pp/Balsamorhiza_serrata.html" ><img src="flower_previews/Balsamorhiza_serrata_PV.jpg" alt="Serrated Balsamroot" title="Serrated Balsamroot"></a>
+        </article>        
+        <article class="season March April May June July August">
+            <a href="flower_pp/Eriophyllum_lanatum.html" ><img src="flower_previews/Eriophyllum_lanatum_PV.png" alt="Oregon Sunshine" title="Oregon Sunshine"></a>
+        </article>        
+        <article class="season March April May June July August September October November">
+            <a href="flower_pp/Helianthus_annuus.html" ><img src="flower_previews/Helianthus_annuus_PV.jpg" alt="Common Sunflower" title="Common Sunflower"></a>
+        </article>        
+        <article class="season March April May June July">
+            <a href="flower_pp/Helianthus_cusickii.html" ><img src="flower_previews/Helianthus_cusickii_PV.jpg" alt="Cusick's Sunflower" title="Cusick's Sunflower"></a>
+        </article>        
+
+<!-- Orange flowers -->
+        <article class="season February March April May June July August September October">
+            <a href="flower_pp/Eschscholzia_californica.html" ><img src="flower_previews/Eschscholzia_californica_PV.jpg" alt="California Poppy" title="
+California Poppy"></a>
+        </article>
+        <article class="season February March April May
+                        ">
+            <a href="flower_pp/Amsinckia_lycopsoides.html" ><img src="flower_previews/Amsinckia_lycopsoides_PV.jpg" alt="Bugloss fiddleneck" title="
+Bugloss fiddleneck"></a>
+        </article>
+        <article class="season February March April May
+                        ">
+            <a href="flower_pp/Amsinckia_menziesii.html" ><img src="flower_previews/Amsinckia_menziesii_PV.jpg" alt="Common Fiddleneck" title="
+Common Fiddleneck"></a>
+        </article>
         
-      <article>
-        <a href="flower_pp/Blitum_bonus-henricus.html"><img src="flower_previews/Blitum_bonus-henricus_PV.jpg" alt="Good King Henry" title="Good King Henry"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Alchemilla_vulgaris.html"><img src="flower_previews/Alchemilla_vulgaris_PV.jpg" alt="Lady's-Mantle" title="Lady's-Mantle"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Plantago_alpina.html"><img src="flower_previews/Plantago_alpina_PV.jpg" alt="Alpine Plantain" title="Alpine Plantain"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Vaccinium_myrtillus.html"><img src="flower_previews/Vaccinium_myrtillus_PV.jpg" alt="Bilberry" title="Bilberry"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Paris_quadrifolia.html"><img src="flower_previews/Paris_quadrifolia_PV.jpg" alt="Herb Paris" title="Herb Paris"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Epipactis_helleborine.html"><img src="flower_previews/Epipactis_helleborine_PV.jpg" alt="Broad-leaved Helleborine" title="Broad-leaved Helleborine"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Neottia_ovata.html"><img src="flower_previews/Neottia_ovata_PV.jpg" alt="Common Twayblade" title="Common Twayblade"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Orobanche_alba.html"><img src="flower_previews/Orobanche_alba_PV.png" alt="Thyme Broomrape" title="Thyme Broomrape"></a>
-      </article>
-      <article>
-        <a href="flower_pp/Orobanche_reticulata.html"><img src="flower_previews/Orobanche_reticulata_PV.png" alt="Thistle Broomrape" title="Thistle Broomrape"></a>
-      </article>
+<!-- Pink to to red- or red-purple flowers -->        
+
+        <article class="season February March April May">
+            <a href="flower_pp/Olsynium_douglasii.html" ><img src="flower_previews/Olsynium_douglasii_PV.jpg" alt="Grass widows" title="Grass widows"></a>
+        </article>
+        <article class="season March April May June July">
+            <a href="flower_pp/Boechera_sparsiflora.html" ><img src="flower_previews/Boechera_sparsiflora_PV.jpg" alt="Sicklepod Rockcress" title="Sicklepod Rockcress"></a>
+        </article>
+        <article class="season April May June July">
+            <a href="flower_pp/Boechera_retrofracta.html" ><img src="flower_previews/Boechera_retrofracta_PV.jpg" alt="Reflexed Rockcress" title="Reflexed Rockcress"></a>
+        </article>
+        <article class="season March April May June July August">
+            <a href="flower_pp/Phoenicaulis_cheiranthoides.html" ><img src="flower_previews/Phoenicaulis_cheiranthoides_PV.jpg" alt="Daggerpod" title="Daggerpod"></a>
+        </article>
+        <article class="season March April May June July">
+            <a href="flower_pp/Trifolium_macrocephalum.html" ><img src="flower_previews/Trifolium_macrocephalum_PV.jpg" alt="Bighead Clover" title="Bighead Clover"></a>
+        </article>
+        <article class="season February March April May June">
+            <a href="flower_pp/Erodium_cicutarium.html" ><img src="flower_previews/Erodium_cicutarium_PV.jpg" alt="Redstem Stork's-Bill" title="Redstem Stork's-Bill"></a>
+        </article>
+        <article class="season March April May June July August">
+            <a href="flower_pp/Paeonia_brownii.html" ><img src="flower_previews/Paeonia_brownii_PV.jpg" alt="Brown's Peony" title="Brown's Peony"></a>
+        </article>
+        <article class="season March April May June July August">
+            <a href="flower_pp/Claytonia_lanceolata.html" ><img src="flower_previews/Claytonia_lanceolata_PV.jpg" alt="Lanceleaf Springbeauty" title="Lanceleaf Springbeauty"></a>
+        </article>
+        <article class="season March April May June July">
+            <a href="flower_pp/Lewisia_rediviva.html" ><img src="flower_previews/Lewisia_rediviva_PV.jpg" alt="Bitterroot" title="Bitterroot"></a>
+        </article>
+        <article class="season April May June July August">
+            <a href="flower_pp/Aquilegia_formosa.html" ><img src="flower_previews/Aquilegia_formosa_PV.jpg" alt="Western Columbine" title="Western Columbine"></a>
+        </article>
+        <article class="season April May June July August">
+            <a href="flower_pp/Clematis_hirsutissima.html" ><img src="flower_previews/Clematis_hirsutissima_PV.png" alt="Sugarbowls" title="Sugarbowls"></a>
+        </article>
+        <article class="season April May June July August">
+            <a href="flower_pp/Thalictrum_occidentale.html" ><img src="flower_previews/Thalictrum_occidentale_PV.jpg" alt="Western Meadow-Rue" title="Western Meadow-Rue"></a>
+        </article>
+        <article class="season March April May June July August">
+            <a href="flower_pp/Geum_triflorum.html" ><img src="flower_previews/Geum_triflorum_PV.jpg" alt="Prairie Smoke" title="Prairie Smoke"></a>
+        </article>
+        <article class="season March April May June July">
+            <a href="flower_pp/Lithophragma_glabrum.html" ><img src="flower_previews/Lithophragma_glabrum_PV.jpg" alt="Bulbous Woodland Star" title="Bulbous Woodland Star"></a>
+        </article>
+        <article class="season March April May June July">
+            <a href="flower_pp/Lithophragma_parviflorum.html" ><img src="flower_previews/Lithophragma_parviflorum_PV.jpg" alt="Prairie Star" title="Prairie Star"></a>
+        </article>
+        <article class="season April May June July August September">
+            <a href="flower_pp/Cynoglossum_officinale.html" ><img src="flower_previews/Cynoglossum_officinale_PV.jpg" alt="Hound's-Tongue" title="Hound's-Tongue"></a>
+        </article>
+        <article class="season April May June July August September">
+            <a href="flower_pp/Phlox_diffusa.html" ><img src="flower_previews/Phlox_diffusa_PV.jpg" alt="Spreading Phlox" title="Spreading Phlox"></a>
+        </article>
+        <article class="season March April May June July">
+            <a href="flower_pp/Primula_conjugens.html" ><img src="flower_previews/Primula_conjugens_PV.jpg" alt="Bonneville Shooting Star" title="Bonneville Shooting Star"></a>
+        </article>
+        <article class="season March April May June July August">
+            <a href="flower_pp/Primula_pauciflora.html" ><img src="flower_previews/Primula_pauciflora_PV.jpg" alt="Dark-throated Shooting Star" title="Dark-throated Shooting Star"></a>
+        </article>
         
+<!-- Violet to blue or blue-purple flowers -->         
+
+        <article class="season April May June">
+            <a href="flower_pp/Camassia_quamash.html" ><img src="flower_previews/Camassia_quamash_PV.jpg" alt="Small camas" title="Small camas"></a>
+        </article>
+        <article class="season March April May June">
+            <a href="flower_pp/Chorispora_tenella.html" ><img src="flower_previews/Chorispora_tenella_PV.jpg" alt="Blue mustard" title="Blue mustard"></a>
+        </article>
+        <article class="season April May June July August">
+            <a href="flower_pp/Frasera_albicaulis.html" ><img src="flower_previews/Frasera_albicaulis_PV.png" alt="Whitestem Frasera" title="Whitestem Frasera"></a>
+        </article> 
+        <article class="season March April May June July">
+            <a href="flower_pp/Astragalus_purshii.html" ><img src="flower_previews/Astragalus_purshii_PV.jpg" alt="Woollypod Milkvetch" title="Woollypod Milkvetch"></a>
+        </article>     
+        <article class="season March April May June July August">
+            <a href="flower_pp/Lupinus_latifolius.html" ><img src="flower_previews/Lupinus_latifolius_PV.jpg" alt="Broadleaf Lupine" title="Broadleaf Lupine"></a>
+        </article>      
+        <article class="season March April May June">
+            <a href="flower_pp/Lupinus_saxosus.html" ><img src="flower_previews/Lupinus_saxosus_PV.jpg" alt="Rock Lupine" title="Rock Lupine"></a>
+        </article>        
+        <article class="season April May June July August">
+            <a href="flower_pp/Vicia_americana.html" ><img src="flower_previews/Vicia_americana_PV.jpg" alt="American Vetch" title="American Vetch"></a>
+        </article>        
+        <article class="season March April May June July August">
+            <a href="flower_pp/Viola_adunca.html" ><img src="flower_previews/Viola_adunca_PV.jpg" alt="Hooked spur violet" title="Hooked spur violet"></a>
+        </article>            
+        <article class="season April May June July August September">
+            <a href="flower_pp/Linum_lewisii.html" ><img src="flower_previews/Linum_lewisii_PV.png" alt="Western blue flax" title="Western blue flax"></a>
+        </article>            
+        <article class="season March April May June July August">
+            <a href="flower_pp/Salvia_dorrii.html" ><img src="flower_previews/Salvia_dorrii_PV.jpg" alt="Purple sage" title="Purple sage"></a>
+        </article>                    
+        <article class="season April May June July August">
+            <a href="flower_pp/Scutellaria_angustifolia.html" ><img src="flower_previews/Scutellaria_angustifolia_PV.jpg" alt="Narrowleaf Skullcap" title="Narrowleaf Skullcap"></a>
+        </article>                       
+        <article class="season March April May June July">
+            <a href="flower_pp/Aphyllon_uniflorum.html" ><img src="flower_previews/Aphyllon_uniflorum_PV.jpg" alt="One-flowered Broomrape" title="One-flowered Broomrape"></a>
+        </article>             
+        <article class="season March April May June July">
+            <a href="flower_pp/Collinsia_parviflora.html" ><img src="flower_previews/Collinsia_parviflora_PV.jpg" alt="Small-flowered Blue-eyed Mary" title="Small-flowered Blue-eyed Mary"></a>
+        </article>        
+        <article class="season March April May June">
+            <a href="flower_pp/Mertensia_longiflora.html" ><img src="flower_previews/Mertensia_longiflora_PV.jpg" alt="Long Bluebells" title="Long Bluebells"></a>
+        </article>         
+        <article class="season March April May June">
+            <a href="flower_pp/Mertensia_oblongifolia.html" ><img src="flower_previews/Mertensia_oblongifolia_PV.jpg" alt="Sagebrush Bluebell" title="Sagebrush Bluebell"></a>
+        </article>        
+        <article class="season March April May June July">
+            <a href="flower_pp/Hydrophyllum_capitatum.html" ><img src="flower_previews/Hydrophyllum_capitatum_PV.jpg" alt="Ballhead Waterleaf" title="Ballhead Waterleaf"></a>
+        </article>        
+        <article class="season April May June July">
+            <a href="flower_pp/Phacelia_linearis.html" ><img src="flower_previews/Phacelia_linearis_PV.png" alt="Threadleaf Phacelia" title="Threadleaf Phacelia"></a>
+        </article>        
+        <article class="season March April May June">
+            <a href="flower_pp/Gilia_sinuata.html" ><img src="flower_previews/Gilia_sinuata_PV.jpg" alt="Rosy Gilia" title="Rosy Gilia"></a>
+        </article>        
+        <article class="season April May June July">
+            <a href="flower_pp/Erigeron_pumilus.html" ><img src="flower_previews/Erigeron_pumilus_PV.jpg" alt="Shaggy Fleabane" title="Shaggy Fleabane"></a>
+        </article>     
+        
+        <!-- Brown/Green flowers -->
+        <article class="season April May June July August">
+            <a href="flower_pp/Fritillaria_atropurpurea.html" ><img src="flower_previews/Fritillaria_atropurpurea_PV.jpg" alt="Spotted Mountain Bells" title="Spotted Mountain Bells"></a>
+        </article>
     </section>
    <script src="script.js"></script>
   </body>
